@@ -8,6 +8,8 @@ pipeline {
             steps {
                 sh 'ls -l'
                 sh 'python hello.py'
+                sh 'cat Jenkinsfile'
+                echo "TRYME ${params.TRYME}"
             }
         }
     }
