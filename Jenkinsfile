@@ -1,7 +1,7 @@
 pipeline {
     agent { docker 'python' }
     parameters {
-        booleanParam(name: 'TRYME', defaultValue: true, description: 'Just try me!')
+        booleanParam(name: 'TRYME', description: 'Just try me!')
     }
     stages {
         stage('build') {
